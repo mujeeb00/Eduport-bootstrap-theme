@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authentication</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./images/favicon.ico">
+
+  <!-- Bootstrap 5 link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Style Tag Link -->
+  <link rel="stylesheet" href="./index.css">
+
+  <!-- font-Awesom link -->
+  <script src="https://kit.fontawesome.com/ab65860442.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+  <!-- NavBar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container">
+        <a class="navbar-brand mt-3" href="#"></i><img src="./images/logo-light.svg" height="36px" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav-list" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0 mt-4">
+            <li class="nav-item">
+              <a class="nav-link text-light active p-2" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle p-2 text-light" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Pages
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item-linav-link text-dark p-3 fs-4" href="./contact.html">Contact us</a></li>
+                <li><a class="dropdown-item-linav-link text-dark p-3 fs-4" href="/about.html">About</a></li>
+                <li><a class="dropdown-item-linav-link text-dark p-3 fs-4"
+                    href="./authentication.html">Authentication</a></li>
+              </ul>
+            <li class="nav-item">
+              <a class="nav-link active p-2 text-light" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active p-2 text-light" href="./contact.html">Contact</a>
+            </li>
+
+            </li>
+          </ul>
+          <form class="d-flex ms-auto">
+            <button class="btn btn-dark mt-3 p-2 " type="submit"><i class="fa-solid fa-power-off fa-fade p-2"
+                style="color: #ffffff;"><a style="color: #ffffff;" href="./authentication.html">Sign in</a></i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- Sign Up & Login -->
+  <div class="container-fluid" style="background-color: #202C39;">
+    <div class="row mt-1 p-5">
+      <div class="col-sm-12 col-md-5 text-center">
+        <h1 class="text-light">Welcome to our largest <br> community</h1>
+        <p class="para-color">Let's learn something new today!</p>
+        <img class="img-fluid" src="./images/login.svg" alt="">
+
+      </div>
+      <div class="col-sm-12 col-md-5 bg-dark my-lg-5 p-lg-4 ms-md-5 mt-sm-5 p-sm-3 mt-5" style="border-radius: 15px;">
+        <form class="p-lg-2 p-sm-1">
+          <!-- title -->
+          <img height="40px" src="./images/logemoji.svg" alt="">
+          <h2 class="text-light pb-3 fw-bold">Sign up for your <br> account!</h2>
+          <div class="mb-3">
+            <!-- Input Fields -->
+            <label for="exampleInputEmail1" class="form-label text-light">Email address*</label>
+            <input type="email" class="form-control" placeholder="E-Mail" id="exampleInputEmail1"
+              aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label text-light">Password*</label>
+            <input type="password" placeholder="*******" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label text-light">Confirm Password*</label>
+            <input type="password" placeholder="*******" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label text-light" for="exampleCheck1">
+              <p class="para-color fs-6 fw-light">By signing up, you agree to the <a href="#">terms of service</a></p>
+            </label>
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn-lg btn-primary text-light">Submit</button>
+          </div>
+          <div class="bottom-form text-center m-4">
+            <p class="para-color">Or</p>
+          </div>
+          <div class="d-grid gap-2 col-12 mx-auto">
+            <button type="submit" class="btn-lg btn-primary text-light fs-6"><i
+                class="fab fa-fw fa-google text-white me-2"></i> Signup With Google</button>
+            <button type="submit" class="btn-lg btn-primary text-light fs-6"><i
+                class="fab fa-fw fa-facebook-f me-2"></i> Singup With Facebook</button>
+          </div>
+          <div class="login-page mt-3 text-center">
+            <p class="para-color">Already have an account?<a href="./login.html">Sign in here</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <!-- Footer -->
+
+    <footer class="p-5 mt-4" style="background-color: #2A2C31;">
+      <div class="container mx-5">
+          <div class="row">
+              <div class="col col-lg-4 col-md-12 mt-3">
+                  <!-- Logo -->
+                  <img src="./images/logo-light.svg" width="180" class="pb-3" alt="">
+                  <p class="para-color mt-2">Eduport education theme, built <br> specifically for the education
+                      centers <br> which is dedicated to teaching and <br> involve learners.</p>
+
+                  <ul class="list-inline mb-0 ">
+                      <li class="list-inline-item"> <a class="btn btn-light btn-sm shadow px-2 py-1 text-primary"
+                              href="#"><i class="fab fa-fw fa-facebook-f"></i></a> </li>
+                      <li class="list-inline-item"> <a class="btn btn-light btn-sm shadow px-2 py-1 text-danger"
+                              href="#"><i class="fab fa-fw fa-instagram"></i></a> </li>
+                      <li class="list-inline-item"> <a class="btn btn-light btn-sm shadow px-2 py-1 text-primary"
+                              href="#"><i class="fab fa-fw fa-twitter"></i></a> </li>
+                      <li class="list-inline-item"> <a class="btn btn-light btn-sm shadow px-2 py-1 text-primary"
+                              href="#"><i class="fab fa-fw fa-linkedin-in"></i></a> </li>
+                  </ul>
+              </div>
+
+              <div class="col col-lg-8 col-md-12 mt-3">
+                  <div class="row">
+                      <div class="col">
+                          <ul style="list-style-type: none;">
+                              <!-- Heading  -->
+                              <h5 class="text-light fw-bold mb-3">Company</h5>
+                              <!-- Items -->
+                              <li class="p-1  para-color">About us</li>
+                              <li class="p-1  para-color">Contact us</li>
+                              <li class="p-1  para-color">News and Blogs</li>
+                              <li class="p-1  para-color">Library</li>
+                              <li class="p-1 para-color">Career</li>
+                          </ul>
+                      </div>
+
+                      <div class="col">
+                          <ul style="list-style-type: none;">
+                              <!-- Heading  -->
+                              <h5 class="text-light fw-bold mb-3">Company</h5>
+                              <!-- Items -->
+                              <li class="p-1  para-color">Documentation</li>
+                              <li class="p-1  para-color">Faq</li>
+                              <li class="p-1  para-color">Forum</li>
+                              <li class="p-1  para-color">Sitemap</li>
+                          </ul>
+                      </div>
+
+                      <div class="col">
+                          <ul style="list-style-type: none;">
+                              <!-- Heading  -->
+                              <h5 class="text-light fw-bold mb-3">Teaching</h5>
+                              <!-- Items -->
+                              <li class="p-1  para-color">Become a teacher</li>
+                              <li class="p-1  para-color">How to guide</li>
+                              <li class="p-1  para-color">Terms & Conditions</li>
+                          </ul>
+                      </div>
+
+                      <div class="col">
+                          <ul style="list-style-type: none;">
+                              <!-- Heading  -->
+                              <h5 class="text-light fw-bold mb-3">Contact</h5>
+                              <!-- Items -->
+                              <li class="p-1  para-color">About us</li>
+                              <li class="p-1  para-color">Contact us</li>
+                              <li class="p-1  para-color">News and Blogs</li>
+                              <li class="p-1  para-color">Library</li>
+                              <li class="p-1 para-color">Career</li>
+                              <div class="downloads d-flex">
+                                  <a class="me-1" href=""><img src="./images/google-play.svg" width="100%" alt=""></a>
+                                  <a class="me-1" href=""><img src="./images/app-store.svg" width="100%" alt=""></a>
+                              </div>
+                          </ul>
+                      </div>
+
+
+
+                  </div>
+              </div>
+              <hr>
+              <!-- Second Row for footer -->
+              <div class="row">
+                  <div class="col-lg-7 p-3">
+                      <p class="para-color">Copyrights ©2023 Webestica. All rights reserved.</p>
+                  </div>
+                  <div class="col-lg-5">
+                      <ul class="d-flex " style="list-style-type: none;">
+                          <li class="para-color p-3">Language</li>
+                          <li class="para-color p-3">Terms of Use</li>
+                          <li class="para-color p-3">Privacy Policy</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+
+
+  <!-- Bootstrap Javascript Link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
