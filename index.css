@@ -22,6 +22,12 @@ body{
     padding: 1rem;
     border-radius: 0.5rem;
 }
+.btn-sign{
+    background-color: rgba(7, 7, 7, 0.856) !important;
+}
+.btn-sign:hover{
+    background-color: #2A2C31 !important;
+}
 a{
     text-decoration: none;
 }
